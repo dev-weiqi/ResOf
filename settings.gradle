@@ -1,0 +1,3 @@
+include ':resof'
+include ':app'
+rootProject.name = "ResOf"
