@@ -1,4 +1,4 @@
-package dev.weiqi.resof
+package dev.weiqi.resofsample
 
 import org.junit.Test
 

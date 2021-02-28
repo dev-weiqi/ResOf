@@ -1,4 +1,4 @@
-package dev.weiqi.resof
+package dev.weiqi.resofsample
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

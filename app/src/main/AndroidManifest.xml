@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.weiqi.resof">
+    package="dev.weiqi.resofsample">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ResOf">
-        <activity android:name=".MainActivity">
+        <activity android:name="dev.weiqi.resofsample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

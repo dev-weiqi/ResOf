@@ -1,0 +1,103 @@
+# ResOf
+
+[![](https://jitpack.io/v/dev-weiqi/ResOf.svg)](https://jitpack.io/#dev-weiqi/ResOf) ![https://img.shields.io/badge/License-Apache%202.0-blue.svg](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+
+ResOf is an android resource wrapper library.
+
+## Install
+
+project/build.gradle
+
+```groovy
+allprojects {
+  repositories {
+   ...
+   maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+app/build.gradle
+
+```groovy
+dependencies {
+    implementation 'com.github.dev-weiqi:ResOf:$latestVersion'
+}
+```
+
+## Usage
+
+Just use it! You don't need to do any initialization!
+
+xml
+
+```xml
+<resources>
+    <string name="app_name">ResOf</string>
+</resources>
+```
+
+1. Function
+
+```kotlin
+val appName = stringOf(R.string.app_name)
+Log.v(TAG,"AppName: $appName !")
+--------------------
+V/TAG: AppName: ResOf !
+```
+
+2. Extension
+
+```kotlin
+val appName = R.string.app_name.asString()
+Log.v(TAG,"AppName: $appName !")
+--------------------
+V/TAG: AppName: ResOf !
+```
+
+## Supported Resources
+
+| Resource Type  | AAPT class     | Function         | Kotlin Extension | Return Type       |
+| :------------- | :------------- | :--------------- | :--------------- | :---------------- |
+| Animation      | R.anim         | animOf           | asAnim           | Animation         |
+| Boolean        | R.bool         | boolOf           | asBool           | Boolean           |
+| Color          | R.color        | colorIntOf       | asColorInt       | Int               |
+| ColorStateList | R.color        | colorStateListOf | asColorStateList | ColorStateList    |
+| Dimension      | R.dimen        | dimenOf          | asDimen          | Float             |
+| Dimen          | R.dimen        | dimenOffsetOf    | asFimenOffset    | Int               |
+| Dimen          | R.dimen        | dimenSizeOf      | asDimenSize      | Int               |
+| Drawable       | R.drawable     | drawableOf       | asDrawable       | Drawable          |
+| Font           | R.font         | fontOf           | asFont           | Typeface          |
+| Fraction       | R.fraction     | fractionOf       | asFraction       | Float             |
+| IntArray       | R.array        | intArrayOf       | asIntArray       | IntArray          |
+| Integer        | R.integer      | integerOf        | asInteger        | Int               |
+| Interpolator   | R.interpolator | interpolatorOf   | asInterpolator   | Interpolator      |
+| Layout         | R.layout       | layoutOf         | asLayout         | XmlResourceParser |
+| Plurals        | R.plurals      | pluralsOf        | asPlurals        | String            |
+| Raw            | R.raw          | rawOf            | asRaw            | InputStream       |
+| String         | R.string       | stringOf         | asString         | String            |
+| StringArray    | R.array        | stringArrayOf    | asStringArray    | Array<out String> |
+| TypedArray     | R.array        | typedArrayOf     | asTypedArray     | TypedArray        |
+| Xml            | R.xml          | xmlOf            | asXml            | XmlResourceParser |
+
+## **Contribution**
+
+Contributions are always welcome. If you have any ideas or suggestions, you can create a Github issue. I will get to you as soon as possible.
+
+## **License**
+
+```
+Copyright 2020 Wei-Qi Wang
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
