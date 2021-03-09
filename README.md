@@ -57,28 +57,28 @@ V/TAG: AppName: ResOf !
 
 ## Supported Resources
 
-| Resource Type  | AAPT class     | Function         | Kotlin Extension                     | Return Type       |
-| :------------- | :------------- | :--------------- | :---------------                     | :---------------- |
-| Animation      | R.anim         | animOf           | R.anim.xx.resOf.anim                 | Animation         |
-| Boolean        | R.bool         | boolOf           | R.bool.id.resOf.bool                 | Boolean           |
-| Color          | R.color        | colorIntOf       | R.color.id.resOf.colorInt            | Int               |
-| ColorStateList | R.color        | colorStateListOf | R.color.id.resOf.colorStateList      | ColorStateList    |
-| Dimension      | R.dimen        | dimenOf          | R.dimen.id.resOf.dimen               | Float             |
-| Dimen          | R.dimen        | dimenOffsetOf    | R.dimen.id.resOf.dimenOffset         | Int               |
-| Dimen          | R.dimen        | dimenSizeOf      | R.dimen.id.resOf.dimenSize           | Int               |
-| Drawable       | R.drawable     | drawableOf       | R.drawable.id.resOf.drawable         | Drawable          |
-| Font           | R.font         | fontOf           | R.font.id.resOf.font                 | Typeface          |
-| Fraction       | R.fraction     | fractionOf       | R.fraction.id.resOf.fraction         | Float             |
-| IntArray       | R.array        | intArrayOf       | R.array.id.resOf.intArray            | IntArray          |
-| Integer        | R.integer      | integerOf        | R.integer.id.resOf.integer           | Int               |
-| Interpolator   | R.interpolator | interpolatorOf   | R.interpolator.id.resOf.interpolator | Interpolator      |
-| Layout         | R.layout       | layoutOf         | R.layout.id.resOf.layout             | XmlResourceParser |
-| Plurals        | R.plurals      | pluralsOf        | R.plurals.id.resOf.plurals           | String            |
-| Raw            | R.raw          | rawOf            | R.raw.id.resOf.raw                   | InputStream       |
-| String         | R.string       | stringOf         | R.string.id.resOf.string             | String            |
-| StringArray    | R.array        | stringArrayOf    | R.array.id.resOf.stringArray         | Array<out String> |
-| TypedArray     | R.array        | typedArrayOf     | R.array.id.resOf.typedArray          | TypedArray        |
-| Xml            | R.xml          | xmlOf            | R.xml.id.resOf.xml                   |  XmlResourceParser |
+| Resource Type  | AAPT class     | Function         | Kotlin Extension                        | Return Type       |
+| :------------- | :------------- | :--------------- | :---------------                        | :---------------- |
+| Animation      | R.anim         | animOf           | R.anim.xxx.resOf.anim()                 | Animation         |
+| Boolean        | R.bool         | boolOf           | R.bool.xxx.resOf.bool()                 | Boolean           |
+| Color          | R.color        | colorIntOf       | R.color.xxx.resOf.colorInt()            | Int               |
+| ColorStateList | R.color        | colorStateListOf | R.color.xxx.resOf.colorStateList()      | ColorStateList    |
+| Dimension      | R.dimen        | dimenOf          | R.dimen.xxx.resOf.dimen()               | Float             |
+| Dimen          | R.dimen        | dimenOffsetOf    | R.dimen.xxx.resOf.dimenOffset()         | Int               |
+| Dimen          | R.dimen        | dimenSizeOf      | R.dimen.xxx.resOf.dimenSize()           | Int               |
+| Drawable       | R.drawable     | drawableOf       | R.drawable.xxx.resOf.drawable()         | Drawable          |
+| Font           | R.font         | fontOf           | R.font.xxx.resOf.font()                 | Typeface          |
+| Fraction       | R.fraction     | fractionOf       | R.fraction.xxx.resOf.fraction()         | Float             |
+| IntArray       | R.array        | intArrayOf       | R.array.xxx.resOf.intArray()            | IntArray          |
+| Integer        | R.integer      | integerOf        | R.integer.xxx.resOf.integer()           | Int               |
+| Interpolator   | R.interpolator | interpolatorOf   | R.interpolator.xxx.resOf.interpolator() | Interpolator      |
+| Layout         | R.layout       | layoutOf         | R.layout.xxx.resOf.layout()             | XmlResourceParser |
+| Plurals        | R.plurals      | pluralsOf        | R.plurals.xxx.resOf.plurals()           | String            |
+| Raw            | R.raw          | rawOf            | R.raw.xxx.resOf.raw()                   | InputStream       |
+| String         | R.string       | stringOf         | R.string.xxx.resOf.string()             | String            |
+| StringArray    | R.array        | stringArrayOf    | R.array.xxx.resOf.stringArray()         | Array<out String> |
+| TypedArray     | R.array        | typedArrayOf     | R.array.xxx.resOf.typedArray()          | TypedArray        |
+| Xml            | R.xml          | xmlOf            | R.xml.xxx.resOf.xml()                   |  XmlResourceParser |
 
 ## **Contribution**
 
