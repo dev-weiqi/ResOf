@@ -3,7 +3,8 @@ package dev.weiqi.resofsample
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import dev.weiqi.resof.asString
+import dev.weiqi.resof.resOf
+import dev.weiqi.resof.string
 import dev.weiqi.resof.stringOf
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val appName1 = stringOf(R.string.app_name)
         Log.v("TAG", "AppName: $appName1 !")
 
-        val appName2 = R.string.app_name.asString()
+        val appName2 = R.string.app_name.resOf.string()
         Log.v("TAG", "AppName: $appName2 !")
     }
 }

@@ -49,7 +49,7 @@ V/TAG: AppName: ResOf !
 2. Extension
 
 ```kotlin
-val appName = R.string.app_name.asString()
+val appName = R.string.app_name.resOf.string()
 Log.v(TAG,"AppName: $appName !")
 --------------------
 V/TAG: AppName: ResOf !
@@ -57,28 +57,28 @@ V/TAG: AppName: ResOf !
 
 ## Supported Resources
 
-| Resource Type  | AAPT class     | Function         | Kotlin Extension | Return Type       |
-| :------------- | :------------- | :--------------- | :--------------- | :---------------- |
-| Animation      | R.anim         | animOf           | asAnim           | Animation         |
-| Boolean        | R.bool         | boolOf           | asBool           | Boolean           |
-| Color          | R.color        | colorIntOf       | asColorInt       | Int               |
-| ColorStateList | R.color        | colorStateListOf | asColorStateList | ColorStateList    |
-| Dimension      | R.dimen        | dimenOf          | asDimen          | Float             |
-| Dimen          | R.dimen        | dimenOffsetOf    | asFimenOffset    | Int               |
-| Dimen          | R.dimen        | dimenSizeOf      | asDimenSize      | Int               |
-| Drawable       | R.drawable     | drawableOf       | asDrawable       | Drawable          |
-| Font           | R.font         | fontOf           | asFont           | Typeface          |
-| Fraction       | R.fraction     | fractionOf       | asFraction       | Float             |
-| IntArray       | R.array        | intArrayOf       | asIntArray       | IntArray          |
-| Integer        | R.integer      | integerOf        | asInteger        | Int               |
-| Interpolator   | R.interpolator | interpolatorOf   | asInterpolator   | Interpolator      |
-| Layout         | R.layout       | layoutOf         | asLayout         | XmlResourceParser |
-| Plurals        | R.plurals      | pluralsOf        | asPlurals        | String            |
-| Raw            | R.raw          | rawOf            | asRaw            | InputStream       |
-| String         | R.string       | stringOf         | asString         | String            |
-| StringArray    | R.array        | stringArrayOf    | asStringArray    | Array<out String> |
-| TypedArray     | R.array        | typedArrayOf     | asTypedArray     | TypedArray        |
-| Xml            | R.xml          | xmlOf            | asXml            | XmlResourceParser |
+| Resource Type  | AAPT class     | Function         | Kotlin Extension                     | Return Type       |
+| :------------- | :------------- | :--------------- | :---------------                     | :---------------- |
+| Animation      | R.anim         | animOf           | R.anim.xx.resOf.anim                 | Animation         |
+| Boolean        | R.bool         | boolOf           | R.bool.id.resOf.bool                 | Boolean           |
+| Color          | R.color        | colorIntOf       | R.color.id.resOf.colorInt            | Int               |
+| ColorStateList | R.color        | colorStateListOf | R.color.id.resOf.colorStateList      | ColorStateList    |
+| Dimension      | R.dimen        | dimenOf          | R.dimen.id.resOf.dimen               | Float             |
+| Dimen          | R.dimen        | dimenOffsetOf    | R.dimen.id.resOf.dimenOffset         | Int               |
+| Dimen          | R.dimen        | dimenSizeOf      | R.dimen.id.resOf.dimenSize           | Int               |
+| Drawable       | R.drawable     | drawableOf       | R.drawable.id.resOf.drawable         | Drawable          |
+| Font           | R.font         | fontOf           | R.font.id.resOf.font                 | Typeface          |
+| Fraction       | R.fraction     | fractionOf       | R.fraction.id.resOf.fraction         | Float             |
+| IntArray       | R.array        | intArrayOf       | R.array.id.resOf.intArray            | IntArray          |
+| Integer        | R.integer      | integerOf        | R.integer.id.resOf.integer           | Int               |
+| Interpolator   | R.interpolator | interpolatorOf   | R.interpolator.id.resOf.interpolator | Interpolator      |
+| Layout         | R.layout       | layoutOf         | R.layout.id.resOf.layout             | XmlResourceParser |
+| Plurals        | R.plurals      | pluralsOf        | R.plurals.id.resOf.plurals           | String            |
+| Raw            | R.raw          | rawOf            | R.raw.id.resOf.raw                   | InputStream       |
+| String         | R.string       | stringOf         | R.string.id.resOf.string             | String            |
+| StringArray    | R.array        | stringArrayOf    | R.array.id.resOf.stringArray         | Array<out String> |
+| TypedArray     | R.array        | typedArrayOf     | R.array.id.resOf.typedArray          | TypedArray        |
+| Xml            | R.xml          | xmlOf            | R.xml.id.resOf.xml                   |  XmlResourceParser |
 
 ## **Contribution**
 
@@ -87,7 +87,7 @@ Contributions are always welcome. If you have any ideas or suggestions, you can 
 ## **License**
 
 ```
-Copyright 2020 Wei-Qi Wang
+Copyright 2021 Wei-Qi Wang
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
