@@ -1,5 +1,8 @@
 package dev.weiqi.resof
 
-data class ResOfWrapper(val id: Int)
+import androidx.annotation.IdRes
 
-val Int.resOf get() = ResOfWrapper(this)
+@JvmInline
+value class ResOfWrapper(@IdRes val id: Int)
+
+inline val @receiver:IdRes Int.resOf get() = ResOfWrapper(this)

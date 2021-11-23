@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val appName1 = stringOf(R.string.app_name)
-        Log.v("TAG", "AppName: $appName1 !")
+        Log.v("TAG", "Hello World: $appName1!")
 
         val appName2 = R.string.app_name.resOf.string()
-        Log.v("TAG", "AppName: $appName2 !")
+        Log.v("TAG", "Hello World: $appName2!")
     }
 }

@@ -43,18 +43,18 @@ xml
 
 ```kotlin
 val appName = stringOf(R.string.app_name)
-Log.v(TAG,"AppName: $appName !")
+Log.v(TAG,"Hello World: $appName!")
 --------------------
-V/TAG: AppName: ResOf !
+V/TAG: Hello World: ResOf!
 ```
 
 2. Extension
 
 ```kotlin
 val appName = R.string.app_name.resOf.string()
-Log.v(TAG,"AppName: $appName !")
+Log.v(TAG,"Hello World: $appName!")
 --------------------
-V/TAG: AppName: ResOf !
+V/TAG: Hello World: ResOf!
 ```
 
 ## Supported Resources
