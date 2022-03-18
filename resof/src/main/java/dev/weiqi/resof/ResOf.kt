@@ -87,6 +87,10 @@ fun stringOf(@StringRes id: Int): String {
     return resOfContext.getString(id)
 }
 
+fun stringOf(@StringRes id: Int, vararg formats: Any): String {
+    return resOfContext.getString(id, *formats)
+}
+
 fun typedArrayOf(@ArrayRes id: Int): TypedArray {
     return resOfResources.obtainTypedArray(id)
 }
